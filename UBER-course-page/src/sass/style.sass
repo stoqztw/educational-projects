@@ -1,0 +1,343 @@
+$main-object-color: #1EACC7
+$grey: rgb(34, 34, 34)
+
+=btn_hover
+    &:hover
+        background-image: none
+        background-color: $main-object-color
+
+*
+    font-family: "Roboto", sans-serif
+header
+    position: relative
+nav
+    position: fixed
+    width: 100%
+    background: $grey
+    height: 50px
+    z-index: 2
+.container
+    width: 1140px
+.nav_indent
+    height: 50px
+    background: rgb(24, 23, 23)
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 13px 70px
+    margin: 0
+    list-style-type: none
+    .menu_link
+        text-decoration: none
+        color: rgb(255, 255, 255)
+        font-size: 15px
+        font-weight: 300
+        transition: 0.2s
+    .menu_title
+        border-right: 2px dotted black
+        padding-right: 28px
+.menu_link
+    &:hover
+        color: rgb(145, 145, 145)
+        transition: 0.2s
+.subheader
+    position: absolute
+    width: 100%
+    background: rgba(0, 0, 0, 0.6)
+    min-height: 87px
+    .subheader_logo
+        display: block
+        margin-top: 17px
+        max-width: 100%
+    .subtitle
+        display: block
+        margin-top: 22px
+        color: rgb(255, 255, 255)
+        font-size: 13px
+        font-weight: 250
+        opacity: 0.6
+    .number_contact
+        display: block
+        margin-top: 8px
+        color: rgb(255, 255, 255)
+        font-size: 22px
+        font-weight: 400
+        text-align: right
+        text-transform: uppercase
+        text-decoration: none
+        line-height: 12px
+.btn
+    margin-top: 21px
+    min-width: 172px
+    min-height: 46px
+    border-radius: 4px
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.12)
+    background-image: linear-gradient(0deg, $main-object-color 0%, #4ce2ff 100%)
+    border: none
+    color: rgb(255, 255, 255)
+    font-size: 14px
+    font-weight: 400
+    line-height: 46px
+    text-transform: uppercase
+    +btn_hover
+
+.hero
+    min-height: 800px
+    background: url("../img/bg_hero.png") center center / cover no-repeat
+    padding: 150px 0 135px 0
+    .hero_header
+        font-weight: 900
+        font-size: 60px
+        text-transform: uppercase
+        text-align: center
+        color: #fff
+        line-height: 60px
+        margin-bottom: 0
+    .hero_title
+        text-transform: uppercase
+        text-align: center
+        color: #fff
+        font-weight: 700
+        font-size: 36px
+        line-height: 36px
+        margin-top: 22px
+        margin-bottom: 0
+    .hero_desc
+        display: block
+        margin-top: 16px
+        width: 985px
+        font-weight: 400
+        font-size: 18px
+        text-align: center
+        color: #fff
+        line-height: 24px
+.hero_btn
+    display: block
+    margin: 115px auto 0 auto
+    text-align: center
+    min-width: 259px
+    min-height: 63px
+    font-size: 18px
+    text-transform: uppercase
+    text-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.21)
+    +btn_hover
+.advantages_subtitle
+    display: block
+    margin: 20px auto
+    padding: 7px 0
+    width: 113px
+    color: rgb(255, 255, 255)
+    font-size: 11px
+    font-weight: 400
+    line-height: 11px
+    text-align: center
+    text-transform: uppercase
+    background-color: rgb(0, 0, 0)
+
+.advantages_title
+    display: block
+    color: $grey
+    margin-top: 33px
+    font-size: 38px
+    font-weight: 700
+    line-height: 48px
+    text-align: center
+    text-transform: uppercase
+.advantages_card
+    margin-left: 35px
+    display: flex
+    height: 150px
+    width: 512px
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 26px
+    gap: 25px
+.advantages_card_sec
+    width: 482px
+.card_circle
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $main-object-color
+    width: 116px
+    height: 116px
+    border-radius: 100%
+    align-self: center
+.text_wrapper
+    max-width: 371px
+.card_title
+    color: $main-object-color
+    font-size: 15px
+    font-weight: 400
+    line-height: 21px
+    max-width: 314px
+.card_desc
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+
+.mobile
+    min-height: 864px
+    padding: 48px 0 79px 0
+    background-color: #fff
+    .row
+        margin-top: 32px
+    &_subtitle
+        color: $grey
+        display: block
+        margin-top: 1px
+        font-size: 17px
+        font-weight: 400
+        line-height: 21px
+        text-align: center
+    &_item
+        display: block
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        padding-top: 92px
+        &_1
+            background: url("../img/card_1.png") center center / cover no-repeat
+        &_2
+            background: url("../img/card_2.png") center center / cover no-repeat
+        &_3
+            background: url("../img/card_3.png") center center / cover no-repeat
+        &_4
+            background: url("../img/card_4.png") center center / cover no-repeat
+        &_5
+            background: url("../img/card_5.png") center center / cover no-repeat
+        &_6
+            background: url("../img/card_6.png") center center / cover no-repeat
+        &_subtitle
+            color: rgb(255, 255, 255)
+            font-size: 24px
+            font-weight: 400
+            line-height: 31px
+            text-align: center
+            text-transform: uppercase
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            width: 26px
+            height: 26px
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            background-color: rgb(0, 0, 0)
+            border-radius: 100%
+            cursor: pointer
+            &::before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $main-object-color
+                transition: .3s all
+            &::after
+                content: ''
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                display: block
+                height: 14px
+                width: 2px
+                background-color: $main-object-color
+                transition: .3s all
+            &:hover
+                &::before, &::after
+                    background-color: $grey
+
+.car
+    position: relative
+    height: 898px
+    padding: 57px 0 137px 0
+    &-bkg
+        position: absolute
+        height: 502px
+        background: rgb(7, 7, 22)
+        width: 100%
+        z-index: -3
+        transform: translateY(-57px)
+    &-subtitle
+        display: block
+        padding: 7px 0
+        margin: 0 auto
+        color: rgb(7, 7, 22)
+        font-size: 11px
+        font-weight: 400
+        line-height: 11px
+        text-align: center
+        text-transform: uppercase
+        background-color: white
+        width: 112px
+    &-title
+        margin-top: 27px
+        color: rgb(255, 255, 255)
+        font-size: 38px
+        font-weight: 700
+        line-height: 48px
+        text-align: center
+        text-transform: uppercase
+    &-desc
+        font-size: 17px
+        text-align: center
+        &-top
+            color: rgb(255, 255, 255)
+            font-weight: 400
+            line-height: 21px
+        &-bottom
+            margin: 0 auto
+            max-width: 327px
+            color: $grey
+            font-weight: 300
+            line-height: 24px
+    &-img
+        display: block
+        margin: 54px auto 0 auto
+
+.require
+    padding: 66px 0 87px 0
+    &_block
+        margin: 33px 0
+        &_nbm
+            margin-bottom: 0px
+    &_tittle
+        color: rgb(28, 168, 195)
+        font-size: 22px
+        font-weight: 400
+        line-height: 24px
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            display: block
+            position: relative
+            color: $grey
+            font-size: 17px
+            font-weight: 300
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url("../icons/check_blue.png") center (center / cover) no-repeat
+    &_descr
+        color: rgb(28, 168, 195)
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+    .warning
+        .require_tittle
+            color: #FF5656
+        .require_list
+            li::before
+                background: url("../icons/check_red.png") center (center / cover) no-repeat
