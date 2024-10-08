@@ -237,16 +237,7 @@ ul
             height: 29px
             border-radius: 100%
             background-color: black
-            &::after
-                content: ''
-                display: block
-                width: 2px
-                height: 17px
-                background-color: $main-color
-                position: absolute
-                top: 50%
-                left: 50%
-                transform: translate(-50%, -50%)
+            transition: all .2s ease
             &::before
                 content: ''
                 display: block
@@ -257,6 +248,22 @@ ul
                 top: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
+            &::after
+                content: ''
+                display: block
+                width: 2px
+                height: 17px
+                background-color: $main-color
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+            &::before, &::after
+                transition: all .2s ease
+            &:hover
+                &::before, &::after
+                    background-color: $second-color
+                    transition: all .2s ease
 
 .car
     position: relative
@@ -347,3 +354,33 @@ ul
                 background: url('../icons/check_red.png') center (center / cover) no-repeat
                 left: -32px
                 top: 6px
+
+.towns
+    padding: 50px 0 22px 0
+    background: url('../img/towns_bg.png') center (center / cover) no-repeat
+    &_boxtittle
+        background-color: white
+        color: rgb(7, 7, 22)
+    &_tittle
+        color: white
+        margin-top: 26px
+        margin-bottom: 2px
+    &_subtittle
+        color: rgb(255, 255, 255)
+        font-size: 17px
+        font-weight: 400
+        line-height: 21px
+        text-align: center
+    &_link
+        display: block
+        margin-top: 480px
+        color: $main-color
+        font-size: 15px
+        font-weight: 400
+        line-height: 21px
+        text-align: center
+        text-transform: uppercase
+        transition: all .1s ease
+        &:hover
+            color: $second-color
+            transition: all .1s ease
