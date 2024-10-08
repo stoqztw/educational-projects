@@ -8,6 +8,9 @@ $second-color: rgb(11, 64, 74)
 a
     text-decoration: none
 
+ul
+    list-style: none
+
 .container
     width: 1140px
 
@@ -41,6 +44,7 @@ a
     text-transform: uppercase
 
 .tittle
+    color: rgb(34, 34, 34)
     font-size: 38px
     font-weight: 700
     line-height: 48px
@@ -253,3 +257,93 @@ a
                 top: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
+
+.car
+    position: relative
+    padding: 59px 0 138px 0
+    &_background
+        display: block
+        position: absolute
+        top: 0
+        width: 100%
+        height: 502px
+        background-color: rgb(7, 7, 22)
+        z-index: -1
+    &_boxtittle
+        background-color: white
+        color: rgb(7, 7, 22)
+    &_tittle
+        margin-top: 26px
+        color: white
+        margin-bottom: 1px
+    &_subtittle
+        color: white
+        font-size: 17px
+        font-weight: 400
+        line-height: 21px
+        text-align: center
+    &_img
+        display: block
+        margin: 0 auto
+        margin-top: 54px
+    &_desc
+        color: rgb(34, 34, 34)
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
+
+.requirements
+    padding: 68px 0 86px 0
+    &_boxtittle
+        background-color: black
+        color: white
+    &_tittle
+        margin-top: 28px
+        margin-bottom: 1px
+    &_wrapper
+        margin-top: 36px
+    &_item
+        margin: 0 auto
+        margin-bottom: 60px
+        &_tittle
+            color: $main-color
+            font-size: 22px
+            font-weight: 400
+            line-height: 24px
+            &_warning
+                color: rgb(255, 86, 86)
+        &_desc
+            color: $main-color
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+        &_list
+            padding-left: 50px
+    .list_item
+        list-style-type: none
+        position: relative
+        color: rgb(34, 34, 34)
+        font-size: 17px
+        font-weight: 300
+        line-height: 32px
+        &_blue
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 21px
+                height: 20px
+                background: url('../icons/check_blue.png') center (center / cover) no-repeat
+                left: -32px
+                top: 6px
+        &_red
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 21px
+                height: 20px
+                background: url('../icons/check_red.png') center (center / cover) no-repeat
+                left: -32px
+                top: 6px
