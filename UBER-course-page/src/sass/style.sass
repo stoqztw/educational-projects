@@ -179,3 +179,77 @@ a
         font-size: 17px
         font-weight: 400
         color: $main-color
+
+.possibilities
+    padding: 48px 0 56px 0
+    &_boxtittle
+        background-color: black
+        color: white
+    &_tittle
+        margin-top: 33px
+        margin-bottom: 1px
+    &_subtittle
+        color: rgb(34, 34, 34)
+        font-size: 17px
+        font-weight: 400
+        line-height: 21px
+        text-align: center
+    &_wrapper
+        margin-top: 30px
+    &_item
+        position: relative
+        display: block
+        margin: 0 auto
+        margin-bottom: 20px
+        padding-top: 90px
+        width: 320px
+        height: 280px
+        &_first
+            background: url('../img/card_1.png') center (center / cover) no-repeat
+        &_second
+            background: url('../img/card_2.png') center (center / cover) no-repeat
+        &_third
+            background: url('../img/card_3.png') center (center / cover) no-repeat
+        &_fourth
+            background: url('../img/card_4.png') center (center / cover) no-repeat
+        &_fifth
+            background: url('../img/card_5.png') center (center / cover) no-repeat
+        &_sixth
+            background: url('../img/card_6.png') center (center / cover) no-repeat
+        &_tittle
+            color: white
+            font-size: 24px
+            font-weight: 400
+            line-height: 31px
+            text-align: center
+            text-transform: uppercase
+        &_plus
+            display: block
+            position: absolute
+            transform: translateX(-50%)
+            top: 217px
+            left: 50%
+            width: 29px
+            height: 29px
+            border-radius: 100%
+            background-color: black
+            &::after
+                content: ''
+                display: block
+                width: 2px
+                height: 17px
+                background-color: $main-color
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+            &::before
+                content: ''
+                display: block
+                width: 17px
+                height: 2px
+                background-color: $main-color
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
