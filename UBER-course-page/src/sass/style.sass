@@ -373,6 +373,8 @@ ul
         text-align: center
     &_link
         display: block
+        width: 220px
+        margin: 0 auto
         margin-top: 480px
         color: $main-color
         font-size: 15px
@@ -384,3 +386,81 @@ ul
         &:hover
             color: $second-color
             transition: all .1s ease
+
+.footer
+    padding: 10px 22px 16px 22px
+    &_devider
+        display: block
+        margin: 0 auto
+        width: 300px
+        height: 7px
+        background-color: $main-color
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+    &_socialmedia
+        display: flex
+        gap: 6px
+        width: 296px
+        &_logo
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 35px
+            height: 35px
+            background-color: rgb(7, 7, 22)
+            border-radius: 100%
+            transition: all .1s ease
+            &:hover
+                background-color: $main-color
+                transition: all .1s ease
+    &_links
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+
+        width: 420px
+        height: 68px
+        &_tittle
+            color: rgb(7, 7, 22)
+            font-size: 15px
+            font-weight: 300
+            line-height: 21px
+            text-transform: uppercase
+            transition: all .1s ease
+            &:hover
+                color: $main-color
+                transition: all .1s ease
+            &_wrapper
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 366px
+        &_subtittle
+            color: rgb(153, 153, 153)
+            font-size: 11px
+            font-weight: 300
+            line-height: 21px
+            text-transform: uppercase
+            transition: all .1s ease
+            &:hover
+                color: $main-color
+                transition: all .1s ease
+            &_wrapper
+                display: flex
+                justify-content: space-between
+                align-items: center
+                gap: 20px
+        &_languages
+            color: $main-color
+            font-size: 11px
+            font-weight: 400
+            line-height: 21px
+            text-transform: uppercase
+            transition: all .1s ease
+            &:hover
+                color: $second-color
+                transition: all .1s ease
