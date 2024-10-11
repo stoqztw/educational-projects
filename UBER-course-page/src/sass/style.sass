@@ -78,6 +78,8 @@ ul
                 border-right: 2px dashed rgb(0, 0, 0)
                 padding-right: 28px
                 transition: all .2s ease
+                &_last
+                    border: none
                 &:hover
                     color: rgb(155, 155, 155)
                     transition: all .2s ease
@@ -398,7 +400,7 @@ ul
     &_wrapper
         display: flex
         justify-content: space-between
-        align-items: center
+        align-items: flex-start
         margin-top: 30px
     &_socialmedia
         display: flex
@@ -416,6 +418,9 @@ ul
             &:hover
                 background-color: $main-color
                 transition: all .1s ease
+            i
+                color: white
+                font-size: 18px
     &_links
         display: flex
         flex-direction: column
