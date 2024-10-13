@@ -1,0 +1,11 @@
+body {
+    padding: 100px 100px;
+}
+
+.row {
+    display: none;
+}
+
+.row_second {
+    display: table-row;
+}
