@@ -48,6 +48,12 @@ html {
   font-weight: 100;
   line-height: normal;
   cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.btn:hover {
+  font-weight: 500;
+  box-shadow: 5px 5px 10px 0px rgba(255, 255, 255, 0.157);
 }
 
 .hero {
@@ -219,7 +225,6 @@ html {
     object-fit: cover;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
   }
-
 }
 
 #fourth__tracker {
