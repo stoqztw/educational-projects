@@ -3,6 +3,11 @@
   --text-color-dark: #221f20;
   --container-padding-inline: 13%;
   --footer-padding-inline: 10%;
+
+  @media screen and (max-width: 768px) {
+    --container-padding-inline: 6%;
+    --footer-padding-inline: 6%;
+  }
 }
 
 * {
@@ -89,6 +94,12 @@ address {
   font-weight: 400;
   line-height: 73px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    & {
+      font-size: 48px;
+    }
+  }
 }
 
 .hero__subtitle {
@@ -97,6 +108,12 @@ address {
   font-size: 32px;
   font-weight: 100;
   line-height: 39px;
+
+  @media screen and (max-width: 768px) {
+    & {
+      margin-top: 80px;
+    }
+  }
 }
 
 .hero__address {
@@ -122,6 +139,14 @@ address {
     bottom: 25px;
     background: url("../icons/Arrow.svg") center center / cover no-repeat;
   }
+
+  @media screen and (max-width: 768px) {
+    &::before {
+      width: 30px;
+      height: 37px;
+      left: -30px;
+    }
+  }
 }
 
 .keywords {
@@ -146,6 +171,18 @@ address {
     font-size: 10px;
     font-weight: 100;
     line-height: 12px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    & {
+      padding: 0 15px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    & li:nth-last-child(-n + 6) {
+      display: none;
+    }
   }
 }
 
