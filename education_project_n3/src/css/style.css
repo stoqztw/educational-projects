@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 300px));
+  grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+}
+
+.grid__item {
+  background-color: blue;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.text {
+  font-size: 20px;
+  background-color: blue;
+  inline-size: 200px;
+  block-size: 300px;
+  writing-mode: vertical-rl;
+}
