@@ -1,47 +1,15 @@
+// libs
 @use "/src/sass/libs/icons_font.css";
-@use "/src/sass/libs/font.css";
 @use "/src/sass/libs/modern-normalize.min.css";
 
+// base
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/basic.scss";
 
-h1,
-h2,
-h3,
-h4,
-h5,
-figure,
-p,
-ol,
-ul {
-    margin: 0;
-}
+// ui
+@use "/src/sass/ui/titles.scss";
+@use "/src/sass/ui/buttons.scss";
 
-ol [role="list"], 
-ul [role="list"] {
-    list-style: none;
-    padding-inline: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-img {
-    display: block;
-    max-inline-size: 100%;
-}
-
-html {
-    font-family: "Barlow", sans-serif;
-    scroll-behavior: smooth;
-}
-
-.test {
-    font-size: 36px;
-    color: $ui-error-color;
-}
+// blocks
+@use "/src/sass/blocks/header.scss";
+@use "/src/sass/blocks/promo.scss";
